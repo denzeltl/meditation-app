@@ -22,29 +22,34 @@
         <title>Meditation App</title>
     </head>
     <body>
+        <div id="background">
+            <video src="video/beach.mp4" loop type="video/mp4" class="w-md-100"></video>
+        </div>
+
         <div class="container bg-dark text-white">
             <div class="vh-100 row flex-column flex-lg-row align-items-center justify-content-center text-center">
                 <!-- Theme Section -->
 
                 <div id="theme-section" class="col row flex-lg-column justify-content-center align-items-center">
-                    <img id="sun-theme" class="col-6" src="svg/beach.svg" alt="Beach Icon" />
-                    <img id="rain-theme" class="col-6" src="svg/rain.svg" alt="Rain Icon" />
+                    <img id="sun-theme" class="col m-5" src="svg/beach.svg" alt="Beach Icon" data-sound="sounds/beach.mp3" />
+                    <img id="rain-theme" class="col m-5" src="svg/rain.svg" alt="Rain Icon" data-sound="sounds/rain.mp3" />
                 </div>
 
                 <!-- Countdown Section -->
                 <div id="countdown-section" class="col row flex-column">
                     <div id="outlines">
-                        <img src="svg/track-outline.svg" alt="" id="countdown-icon" />
-                        <img src="svg/moving-outline.svg" alt="" id="countdown-icon" />
+                        <img src="svg/track-outline.svg" alt="" id="countdown-track-icon" />
+                        <img src="svg/moving-outline.svg" alt="" id="countdown-moving-icon" />
+                        <img src="svg/play.svg" alt="" id="play-icon" />
                     </div>
                     <h3 id="minutes-countdown">0:00</h3>
                 </div>
 
                 <!-- Minutes Section -->
                 <div id="minutes-section" class="col row flex-lg-column justify-content-center align-items-center">
-                    <div class="col btn m-2 m-lg-4 text-white">2 Minutes</div>
-                    <div class="col btn m-2 m-lg-4 text-white">5 Minutes</div>
-                    <div class="col btn m-2 m-lg-4 text-white">10 Minutes</div>
+                    <div class="col btn m-2 m-lg-4 text-white" data-time="120">2 Minutes</div>
+                    <div class="col btn m-2 m-lg-4 text-white" data-time="300">5 Minutes</div>
+                    <div class="col btn m-2 m-lg-4 text-white" data-time="600">10 Minutes</div>
                 </div>
             </div>
         </div>
