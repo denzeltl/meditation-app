@@ -1,0 +1,35 @@
+#theme-section #sun-theme,
+#theme-section #rain-theme {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+#countdown-section {
+  position: relative;
+}
+
+#countdown-section div img:nth-child(1) {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+}
+
+#countdown-section div img:nth-child(2) {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+}
+
+#countdown-section div h3 {
+  color: black;
+}
+
+#minutes-section .btn {
+  cursor: pointer;
+  border: 2px solid white;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
