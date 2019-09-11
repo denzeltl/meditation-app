@@ -1,3 +1,8 @@
+html,
+body {
+  height: 100%;
+}
+
 video {
   width: 100%;
   position: fixed;
@@ -29,11 +34,13 @@ video {
   color: #000;
 }
 
-#countdown-section {
+#countdown-section #outlines {
   position: relative;
+  display: block;
+  height: 15rem;
 }
 
-#countdown-section #outlines img:nth-child(1) {
+#countdown-section #outlines svg:nth-child(1) {
   position: absolute;
   width: 250px;
   height: 250px;
@@ -43,14 +50,14 @@ video {
           transform: translate(-50%, -60%);
 }
 
-#countdown-section #outlines img:nth-child(2) {
+#countdown-section #outlines svg:nth-child(2) {
   position: absolute;
   width: 250px;
   height: 250px;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -60%);
-          transform: translate(-50%, -60%);
+  -webkit-transform: translate(-50%, -60%) rotate(-90deg);
+          transform: translate(-50%, -60%) rotate(-90deg);
 }
 
 #countdown-section #outlines img:nth-child(3) {
@@ -65,13 +72,18 @@ video {
 }
 
 #countdown-section h3 {
-  position: fixed;
+  position: absolute;
   text-align: center;
-  top: 70%;
+  top: 110%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: #fff;
+}
+
+#minutes-section {
+  margin-top: 75px;
+  margin-bottom: 30px;
 }
 
 #minutes-section .btn {
@@ -84,5 +96,11 @@ video {
 #minutes-section .btn:hover {
   color: #000 !important;
   background: #fff;
+}
+
+@media (min-width: 992px) {
+  #minutes-section {
+    margin-top: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

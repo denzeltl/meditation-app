@@ -1,3 +1,8 @@
+html,
+body {
+    height: 100%;
+}
+
 video {
     width: 100%;
     position: fixed;
@@ -30,9 +35,13 @@ video {
 
 // Countdown Section
 #countdown-section {
-    position: relative;
+    #outlines {
+        position: relative;
+        display: block;
+        height: 15rem;
+    }
 
-    #outlines img:nth-child(1) {
+    #outlines svg:nth-child(1) {
         position: absolute;
         width: 250px;
         height: 250px;
@@ -41,13 +50,13 @@ video {
         transform: translate(-50%, -60%);
     }
 
-    #outlines img:nth-child(2) {
+    #outlines svg:nth-child(2) {
         position: absolute;
         width: 250px;
         height: 250px;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -60%);
+        transform: translate(-50%, -60%) rotate(-90deg);
     }
 
     #outlines img:nth-child(3) {
@@ -61,9 +70,9 @@ video {
     }
 
     h3 {
-        position: fixed;
+        position: absolute;
         text-align: center;
-        top: 70%;
+        top: 110%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: #fff;
@@ -72,6 +81,9 @@ video {
 
 // Minutes Section
 #minutes-section {
+    margin-top: 75px;
+    margin-bottom: 30px;
+
     .btn {
         cursor: pointer;
         border: 2px solid white;
@@ -82,5 +94,11 @@ video {
             color: #000 !important ;
             background: #fff;
         }
+    }
+}
+
+@media (min-width: 992px) {
+    #minutes-section {
+        margin-top: 0;
     }
 }
